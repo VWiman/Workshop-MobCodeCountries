@@ -2,25 +2,53 @@ html {
   box-sizing: border-box;
 }
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
-}
-body {
-    background-color: lightgray;
-}
-header {
-  background-color: darkgrey;
-  height: 60px;
-  text-align: center;
   
 }
 
-header, h2{
-  font-size: 30px;
+body {
+    background-color: lightgray;
+
+}
+
+section {
+  display: flex; /* content inside this section are aligned in columns */
   padding: 10px;
 }
+
+article, nav {
+  background-color: brown;
+  border: 1px solid black;
+}
+
+article {
+  padding-left: 20px;
+  background-color: blue;
+  
+}
+
+header {
+  background-color: darkgrey;
+  height: 60px;
+ /* text-align: center; */
+  display: flex; /* using flexbox to center 'Countries' horizontally and(!) vertically, inside the button! */
+  justify-content: center; 
+  align-items: center; 
+}
+
+header, h2 {
+  font-size: 30px;
+  /* padding: 10px; */
+}
+
+footer {
+  background-color: yellow;
+
+}
+
 img {
     max-width: 300px;
     border-radius: 20px;
