@@ -10,13 +10,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
-} 
+  background-color: lightgray;
+  }
 
 section {
-   display: flex; 
-   flex-grow: 1;
-   /* min-width: auto;  */
+  display: flex;
+    flex-grow: 1;
+    /* min-width: auto;  */
 }
 
 nav {
@@ -25,11 +25,8 @@ nav {
 }
 
 article {
-  
   padding: 50px;
   background-color: lightgray;
-  min-width: 100%;
-  
 }
 
 header {
@@ -61,13 +58,15 @@ footer {
 }
 
 li {
-  list-style:none;
+  list-style: none;
   padding: 10px;
 }
+
 p {
   margin-top: 10px;
   margin-bottom: 15px;
 }
+
 a {
   text-decoration: none black;
 }
@@ -82,6 +81,7 @@ img {
   section {
     display: block;
   }
+
   nav {
     text-align: center;
   }
