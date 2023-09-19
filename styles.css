@@ -6,51 +6,69 @@ html {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  
+
 }
 
 body {
-    background-color: lightgray;
+  background-color: lightgray;
 
 }
 
 section {
-  display: flex; /* content inside this section are aligned in columns */
-  padding: 10px;
+  display: flex;
+  /* content inside this section are aligned in columns */
 }
 
-article, nav {
-  background-color: brown;
-  border: 1px solid black;
+nav {
+  padding: 20px;
+  background-color: gray;
 }
+
 
 article {
-  padding-left: 20px;
-  background-color: blue;
-  
+  padding: 10px;
 }
 
 header {
   background-color: darkgrey;
   height: 60px;
- /* text-align: center; */
-  display: flex; /* using flexbox to center 'Countries' horizontally and(!) vertically, inside the button! */
-  justify-content: center; 
-  align-items: center; 
+  /* text-align: center; */
+  display: flex;
+  /* using flexbox to center 'Countries' horizontally and(!) vertically, inside the button! */
+  justify-content: center;
+  align-items: center;
 }
 
-header, h2 {
+header h2 {
   font-size: 30px;
   /* padding: 10px; */
 }
 
 footer {
-  background-color: yellow;
+  text-align: center;
+  background-color: darkgray;
+  color: white;
+  height: 60px;
+  /* text-align: center; */
+  display: flex;
+  /* using flexbox to center 'Countries' horizontally and(!) vertically, inside the button! */
+  justify-content: center;
+  align-items: center;
 
 }
 
+li {
+  list-style: none;
+}
+
 img {
-    max-width: 300px;
-    border-radius: 20px;
-    border: solid;
+  max-width: 300px;
+  border-radius: 20px;
+  border: solid;
+}
+
+@media (max-width: 600px) {
+  section {
+    display: block;
+  }
 }
