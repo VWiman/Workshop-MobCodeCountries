@@ -6,13 +6,16 @@
 
 }
 
-/* body {
-  
-
-} */
+body {
+  min-height: 100vh;
+display: flex;
+flex-direction: column;
+} 
 
 section {
   display: flex;
+  flex-grow: 1;
+  min-width: auto;
   /* content inside this section are aligned in columns */
 }
 
@@ -24,7 +27,7 @@ nav {
 article {
   padding: 50px;
   background-color: lightgray;
-  min-width: 100%;
+  
 }
 
 header {
@@ -59,7 +62,10 @@ li {
   list-style:none;
   padding: 10px;
 }
-
+p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
 a {
   text-decoration: none black;
 }
